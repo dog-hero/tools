@@ -4,10 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@types/node': ^18.11.18
       rimraf: ^3.0.2
       typescript: ^4.9.4
       unbuild: ^1.0.2
     devDependencies:
+      '@types/node': 18.11.18
       rimraf: 3.0.2
       typescript: 4.9.4
       unbuild: 1.0.2
@@ -391,6 +393,10 @@ packages:
 
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+    dev: true
+
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
     dev: true
 
   /@types/resolve/1.20.2:
