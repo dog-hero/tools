@@ -4,9 +4,15 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "build": "pnpm -r --parallel run build"
   },
   "keywords": [],
   "author": "Dog Hero org (https://github.com/dog-hero)",
   "license": "ISC",
-  "packageManager": "pnpm@7.19.0"
+  "packageManager": "pnpm@7.19.0",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.0.2"
+  }
 }

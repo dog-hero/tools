@@ -1,0 +1,25 @@
+{
+  "name": "@dog-hero/gihub-check-run",
+  "version": "1.0.0",
+  "description": "Create github check run",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean:dist": "rimraf ./dist",
+    "build": "pnpm run clean:dist && unbuild"
+  },
+  "author": "",
+  "license": "ISC"
+}
