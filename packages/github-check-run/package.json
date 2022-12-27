@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "clean:dist": "rimraf ./dist",
-    "build": "pnpm run clean:dist && unbuild"
+    "build": "pnpm run clean:dist && unbuild",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"
