@@ -1,0 +1,14 @@
+{
+  "name": "@dog-hero-internal/configs",
+  "version": "1.0.0",
+  "description": "Internal configurations",
+  "main": "./src/index.cjs",
+  "files": [
+    "*"
+  ],
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true
+}
