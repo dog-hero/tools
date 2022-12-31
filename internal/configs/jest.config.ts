@@ -1,22 +1,22 @@
-import type { JestConfigWithTsJest } from "ts-jest";
+import type { JestConfigWithTsJest } from 'ts-jest';
 
 const config: JestConfigWithTsJest = {
-  roots: ["./src"],
-  preset: "ts-jest/presets/js-with-ts",
-  testEnvironment: "node",
-  testMatch: ["**/?(*.)+(spec|test).+(ts|tsx|js)"],
+  roots: ['./src'],
+  preset: 'ts-jest/presets/js-with-ts',
+  testEnvironment: 'node',
+  testMatch: ['**/?(*.)+(spec|test).+(ts|tsx|js)'],
   transform: {
-    "^.+\\.(ts|tsx)$": [
-      "ts-jest",
+    '^.+\\.(ts|tsx)$': [
+      'ts-jest',
       {
-        tsconfig: "tsconfig.json",
+        tsconfig: 'tsconfig.json',
       },
     ],
   },
   collectCoverage: true,
-  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"],
-  coverageDirectory: "./coverage",
-  coverageReporters: ["clover", "json", "lcov", "html"],
+  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**'],
+  coverageDirectory: './coverage',
+  coverageReporters: ['clover', 'json', 'lcov', 'html'],
   coverageThreshold: {
     global: {
       branches: 100,
