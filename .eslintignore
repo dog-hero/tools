@@ -1,3 +1,5 @@
 **/build.config.ts
 **/jest.config.ts
 **/dist/**
+pnpm-lock.yaml
+pnpm-workspace.yaml
