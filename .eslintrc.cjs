@@ -10,5 +10,15 @@ module.exports = defineConfig({
     sourceType: 'module',
     ecmaVersion: 2021,
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'import'],
+  rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
+    'node/no-missing-import': [
+      'error',
+      {
+        allowModules: ['types'],
+        tryExtensions: ['.ts', '.js', '.jsx', '.tsx', '.d.ts'],
+      },
+    ],
+  },
 });
