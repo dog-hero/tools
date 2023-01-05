@@ -14,7 +14,7 @@ const config: JestConfigWithTsJest = {
     ],
   },
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**'],
+  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**', '!**/index.{ts,tsx}'],
   coverageDirectory: './coverage',
   coverageReporters: ['clover', 'json', 'lcov', 'html'],
   coverageThreshold: {
