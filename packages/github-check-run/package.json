@@ -1,7 +1,7 @@
 {
   "name": "@dog-hero/gihub-check-run",
-  "version": "1.0.0",
-  "description": "Create github check run",
+  "version": "0.0.1",
+  "description": "Create Github Check-runs",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -14,13 +14,37 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "AUTHORS",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "clean:dist": "rimraf ./dist",
     "build": "pnpm run clean:dist && unbuild",
     "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu jest"
   },
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "author": "Dog Hero Organization",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dog-hero/tools.git",
+    "directory": "packages/github-check-run"
+  },
+  "bugs": {
+    "url": "https://github.com/dog-hero/tools/issues"
+  },
+  "homepage": "https://github.com/dog-hero/tools/blob/main/packages/github-check-run#readme",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@octokit/auth-app": "^4.0.7",
+    "@octokit/types": "^8.0.0",
+    "octokit": "^2.0.10"
+  },
+  "devDependencies": {
+    "@dog-hero-internal/configs": "workspace:^1.0.0",
+    "@octokit/types": "^8.0.0"
+  }
 }
