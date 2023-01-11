@@ -8,8 +8,9 @@
     "postinstall": "simple-git-hooks",
     "build": "pnpm -r --parallel run build",
     "test": "pnpm -r --parallel run test",
-    "lint": "pnpm -r run lint",
-    "format": "pnpm -r run format"
+    "lint": "eslint . --cache --cache-location ./node_modules/.cache",
+    "lintfix": "pnpm run lint --fix",
+    "format": "prettier . --write --cache --ignore-unknown"
   },
   "keywords": [],
   "author": "Dog Hero org (https://github.com/dog-hero)",

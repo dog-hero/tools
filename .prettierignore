@@ -1,4 +1,5 @@
 **/dist/**
+**/coverage/**
 LICENSE.md
 pnpm-lock.yaml
 pnpm-workspace.yaml

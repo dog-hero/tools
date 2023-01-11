@@ -1,4 +1,0 @@
-{
-  "extends": "@dog-hero-internal/configs/tsconfig.json",
-  "include": ["./src"]
-}
