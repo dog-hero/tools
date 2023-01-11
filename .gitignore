@@ -28,6 +28,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional prettier cache
+.prettier-cache
+
 # Output of 'npm pack'
 *.tgz
 

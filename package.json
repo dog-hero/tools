@@ -9,8 +9,10 @@
     "build": "pnpm -r --parallel run build",
     "test": "pnpm -r --parallel run test",
     "lint": "eslint . --cache --cache-location ./node_modules/.cache",
-    "lintfix": "pnpm run lint --fix",
-    "format": "prettier . --write --cache --ignore-unknown"
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier . --write --cache --ignore-unknown",
+    "format:check": "prettier . --check --ignore-unknown --cache-location ./.prettier-cache",
+    "type:check": "pnpm -r run type:check"
   },
   "keywords": [],
   "author": "Dog Hero org (https://github.com/dog-hero)",
@@ -43,8 +45,8 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --write --cache --ignore-unknown",
-      "eslint . --cache --fix"
+      "pnpm run lint",
+      "pnpm run format:check"
     ]
   }
 }

@@ -22,7 +22,8 @@
   "scripts": {
     "clean:dist": "rimraf ./dist",
     "build": "pnpm run clean:dist && unbuild",
-    "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu jest"
+    "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu jest",
+    "type:check": "tsc --project . --noEmit --emitDeclarationOnly false"
   },
   "license": "MIT",
   "author": "Dog Hero Organization",
